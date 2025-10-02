@@ -8,25 +8,28 @@ Este projeto foi criado para aplicar de forma prática os conceitos de desenvolv
 
 ## 🚀 Funcionalidades (Endpoints da API)
 
-A API oferece as seguintes funcionalidades para o recurso de usuários:
+### Categorias
+- **GET /categorias**: Lista todas as categorias cadastradas.
+- **POST /categorias**: Cria uma nova categoria.
 
-* **`GET /usuarios`**: Lista todos os usuários cadastrados.
-* **`GET /usuarios/{id}`**: Busca um usuário específico pelo seu ID.
-* **`POST /usuarios`**: Cria um novo usuário.
-* **`PUT /usuarios/{id}`**: Atualiza os dados de um usuário existente.
-* **`DELETE /usuarios/{id}`**: Deleta um usuário.
+### Filmes
+- **POST /filmes**: Cria um novo filme.
 
-### 🛠️ Tecnologias utilizadas
-- Java 17+
-- Spring Boot (Spring Web, Spring Data JPA)
-- Maven (com ./mvnw disponível)
-- H2 (in-memory)
-- Lombok
 
-### Requisitos
-- Java 17+
-- Maven
-- Rede/porta livre (padrão: **`localhost:8080`**)
+## 🛠️ Tecnologias Utilizadas
+
+As seguintes ferramentas e tecnologias foram utilizadas na construção do projeto:
+
+* **Java**: Versão 21.
+* **Spring Boot**: Framework principal para a construção da API.
+* **Maven**: Gerenciador de dependências e build do projeto.
+* **Lombok**: Biblioteca para reduzir código boilerplate.
+* **H2**: Banco de Dados em Memória, versátil para testes.
+
+## Pré-requisitos:
+* JDK 17 ou superior
+* Rede/porta livre (padrão: `localhost:8080`)
+* Git
 
 
 ## 🏛️ Arquitetura do Projeto
@@ -36,8 +39,8 @@ O projeto segue uma arquitetura em camadas, dividindo as responsabilidades para 
 * **Entities**: Camada de objetos que representam as tabelas do banco de dados.
 * **Repository**: Camada de acesso a dados, responsável pela comunicação com o banco de dados.
 * **Service**: Camada de regras de negócio da aplicação.
-* **DTO (Data Transfer Object)**: Objetos para transferência de dados entre as camadas.
-* **Controller**: Camada responsável por expor os endpoints da API e lidar com as requisições HTTP.
+* **DTO (Data Transfer Object)**: Objetos para transferência de dados entre as camadas, evitando a exposição das entidades.
+* **Controller**: Camada de apresentação, responsável por expor os endpoints da API e lidar com as requisições HTTP.
 
 ## ✨ Agradecimentos e Créditos
 
