@@ -2,7 +2,7 @@
 
 ![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)
 
-> Projeto de uma API REST para gerenciamento de usuários, desenvolvido como parte do workshop "Primeira API com Spring Boot" na feira de tecnologia SEMITI.
+> Projeto de uma API REST para gerenciamento de filmes, desenvolvido como parte do workshop "Primeira API com Spring Boot" na feira de tecnologia SEMITI.
 
 Este projeto foi criado para aplicar de forma prática os conceitos de desenvolvimento back-end com Java e Spring Boot.
 
